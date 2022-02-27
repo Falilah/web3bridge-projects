@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "addThrift",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "tIndex_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tId",
+						"type": "uint256"
+					}
+				],
+				"name": "collectThrift",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_in",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address",
+						"name": "_last",
+						"type": "address"
+					}
+				],
+				"name": "getNextCollector",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "_next",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_thriftId",
+						"type": "uint256"
+					}
+				],
+				"name": "joinThrift",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "returnBalance",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_amount",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "thrifts",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "lastCollector",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maturityTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "valid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"product.sol": "purse"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"product.sol": {
+			"keccak256": "0x5d9f18ff3ec47c612cc5a8b6c2358992727881c85bc0f4a89802a627bd2d5d50",
+			"urls": [
+				"bzz-raw://013728be9e937092b57515dfa596b9e39b54da0dfac99ccea88794bdc5a29375",
+				"dweb:/ipfs/QmV9jUfrMoProhD31EygALRDcVXHexDTHuVK8ZFE6CEpAJ"
+			]
+		}
+	},
+	"version": 1
+}

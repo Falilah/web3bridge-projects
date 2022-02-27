@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amount",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_size",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "position",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "addGoods",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_position",
+						"type": "string"
+					}
+				],
+				"name": "checkCities",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256[]",
+								"name": "amount",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "string[]",
+								"name": "sizes",
+								"type": "string[]"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "head",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "house",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct goodsExistence.villagewithoutStruct",
+								"name": "vee",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct goodsExistence.structWithoutMApping",
+						"name": "SWM",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "position",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "getVillageMapping",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"exist.sol": "goodsExistence"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"exist.sol": {
+			"keccak256": "0x1b37c0e12af0508716d88f39efc5428ba30bd2dce93f5a782b5886ae1c45c6f9",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://0e8ae86bc96920ca56d51ab38139aeb9926174edc815755c440a955e3c45ef81",
+				"dweb:/ipfs/Qmf2W96VwzRPRk51TDazugJaCBM5QwtXaENoEpYsJfahKy"
+			]
+		}
+	},
+	"version": 1
+}

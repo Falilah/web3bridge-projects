@@ -4,6 +4,9 @@ contract Escrow {
   address public seller;
   address public buyer;
   address public arbitrator;
+  uint zero;
+
+
 
   uint256 public purchasePrice;
   uint256 public purchaseConfirmationCount;
