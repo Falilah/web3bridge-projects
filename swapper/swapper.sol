@@ -43,13 +43,13 @@ assert(o.expiry>=block.timestamp);
 assert(o.amountAvailable*1e8>=debt);
 require(IERC20(o.toToken).transferFrom(msg.sender,o.owner,_amountIn));
 require(IERC20(o.fromToken).transfer(msg.sender,debt/1e8));
-o.amountAvailable-=debt;
+o.amountAvailable-=debt/1e8;
 o.done=o.amountAvailable==0?true:false;
 }
 
-function calcRateAndAmountOut(uint orderId,uint amountIn) internal returns(uint rate,uint amountOut){
+function calcRateAndAmountOut(uint orderId,uint amountIn) internal view returns(uint rate,uint amountOut){
 uint out=orders[orderId].toTokenAmount;
-uint rate=(out*1e8)/orders[orderId].fromTokenAmount;
+rate=orders[orderId].fromTokenAmount/(out*1e8);
 amountOut=rate*amountIn;
 }
 
